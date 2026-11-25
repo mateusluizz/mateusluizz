@@ -23,10 +23,10 @@ Projetei e construí uma **plataforma de dados lakehouse do zero** (abr/2025 –
 
 Também cuido da infraestrutura de uma plataforma de ferramentas para desenvolvedores de testes manuais e automatizados:
 - **SSO:** login único com OAuth 2.0 em todas as ferramentas da plataforma
-- **Servidor:** gerencio o servidor que hospeda as ferramentas, com monitoramento no Grafana
+- **Servidor:** gerencio o servidor que hospeda as 5 ferramentas da plataforma, com monitoramento no Grafana
 - **Processamento assíncrono:** RabbitMQ como broker central das filas assíncronas, consumidas por workers Celery
 - **Servidores de aplicação:** Gunicorn gerenciando workers Uvicorn, para que as aplicações usem todos os núcleos de CPU, workers travados ou com falha sejam substituídos automaticamente e os workers sejam reciclados periodicamente, mantendo o uso de memória estável
-- **Nginx:** um gateway que atua como proxy reverso e load balancer, e um Nginx por aplicação servindo seus arquivos estáticos. O gateway continua no ar e roteando mesmo quando um dos serviços por trás dele cai
+- **Nginx:** um gateway que atua como proxy reverso e load balancer, e um Nginx por aplicação servindo seus arquivos estáticos. Com resolução dinâmica de upstream, o gateway continua no ar e roteando mesmo quando um dos serviços por trás dele cai
 
 #### Publicações e apresentações
 - *An Approach to Automating User Story Management for Testing Process Optimization in Large Distributed Teams*

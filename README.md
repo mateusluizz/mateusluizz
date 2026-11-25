@@ -23,10 +23,10 @@ Designed and built a **lakehouse data platform from scratch** (Apr 2025 – pres
 
 I also run the infrastructure of a platform of tools for manual and automated test developers:
 - **SSO:** OAuth 2.0 single sign-on across the platform's tools
-- **Server:** manage the server hosting the tools, monitored with Grafana
+- **Server:** manage the server hosting the platform's 5 tools, monitored with Grafana
 - **Async work:** RabbitMQ as the central broker for asynchronous queues, consumed by Celery workers
 - **App servers:** Gunicorn managing Uvicorn workers, so the apps use every CPU core, crashed or hung workers are replaced automatically, and workers are recycled periodically to keep memory usage flat
-- **Nginx:** a gateway that acts as reverse proxy and load balancer, plus one Nginx per application serving its static files. The gateway stays up and keeps routing even when one of the services behind it goes down
+- **Nginx:** a gateway that acts as reverse proxy and load balancer, plus one Nginx per application serving its static files. Upstreams are resolved dynamically, so the gateway stays up and keeps routing even when one of the services behind it goes down
 
 #### Publications and talks
 - *An Approach to Automating User Story Management for Testing Process Optimization in Large Distributed Teams*
