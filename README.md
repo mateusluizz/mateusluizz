@@ -21,6 +21,13 @@ Designed and built a **lakehouse data platform from scratch** (Apr 2025 – pres
 - Automated task creation from user stories, work that became the paper *An Approach to Automating User Story Management for Testing Process Optimization in Large Distributed Teams*
 - Automated day-to-day team processes and built dashboards to track them
 
+I also run the infrastructure of a platform of tools for manual and automated test developers:
+- **SSO:** OAuth 2.0 single sign-on across the platform's tools
+- **Server:** manage the server hosting the tools, monitored with Grafana
+- **Async work:** RabbitMQ as the central broker for asynchronous queues, consumed by Celery workers
+- **App servers:** Gunicorn managing Uvicorn workers, so the apps use every CPU core, crashed or hung workers are replaced automatically, and workers are recycled periodically to keep memory usage flat
+- **Nginx:** a gateway that acts as reverse proxy and load balancer, plus one Nginx per application serving its static files. The gateway stays up and keeps routing even when one of the services behind it goes down
+
 #### Publications and talks
 - *An Approach to Automating User Story Management for Testing Process Optimization in Large Distributed Teams*
 - *Otimização da Geração de Casos de Teste em Aplicativos Móveis via Aprendizado por Reforço e Agentes de IA* (Optimizing Test Case Generation for Mobile Apps with Reinforcement Learning and AI Agents). Postgraduate research, presented at [SAST · CBSoft 2026](https://cbsoft.sbc.org.br/2026/en/symposiums/sast/event/)
@@ -28,10 +35,10 @@ Designed and built a **lakehouse data platform from scratch** (Apr 2025 – pres
 #### Stack
 **Languages:** Python · Java · JavaScript/TypeScript · SQL
 
-**Backend:** Django · Django REST · FastAPI · Spring Boot
+**Backend:** Django · Django REST · FastAPI · Spring Boot · Celery · RabbitMQ
 
 **Data:** Apache Spark · Airflow · Iceberg · Nessie · Trino · Superset · MinIO/S3 · PostgreSQL
 
 **Testing & AI:** Android · Reinforcement learning · AI agents
 
-**Infra & Security:** Docker · Nginx · APISIX · Keycloak · HashiCorp Vault · OPA · Linux
+**Infra & Security:** Docker · Nginx · APISIX · Gunicorn · Uvicorn · Grafana · OAuth 2.0 · Keycloak · HashiCorp Vault · OPA · Linux
