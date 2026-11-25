@@ -16,14 +16,6 @@ Projetei e construí uma **plataforma de dados lakehouse do zero** (abr/2025 –
 - **Segurança:** SSO com Keycloak (OIDC) em todas as ferramentas, acesso a tabelas por grupo no Trino via Open Policy Agent, HashiCorp Vault para segredos, Nginx/APISIX como gateway
 - **Alertas:** meu trabalho mais recente é um sistema de alertas para a plataforma
 
-**Desafios que resolvi**
-- **Cargas isoladas e atômicas:** uma execução com falha nunca deixa a `main` pela metade, porque cada execução tem sua própria branch no Nessie
-- **Camada Silver incremental:** upserts com MERGE e controle de soft delete (`is_deleted`) em vez de recargas completas
-- **Uma identidade, quatro papéis:** os papéis admin/engineer/analyst/viewer valem de forma consistente no Trino, no object storage, no Superset e no Airflow. Mudanças de grupo no Keycloak chegam ao motor de consulta por webhook, sem precisar reiniciar nada
-- **Gestão de segredos:** migrei as credenciais de arquivos env para o Vault (AppRole por serviço), permitindo rotacioná-las sem novo deploy
-- **Operação:** backups criptografados (AES-256) no object storage e no Google Drive com retenção, pipeline de restore e relatório mensal de auditoria de acesso (logins e histórico de queries) enviado por e-mail
-- **Portabilidade:** o mesmo código faz deploy em 6 topologias (dev, staging, on-prem, AWS híbrido…) com Docker Compose
-
 #### Automação de Testes (SDET)
 - Criei ferramentas com agentes de IA para criação, análise e execução de casos de teste
 - Automatizei a criação de tasks a partir de user stories, trabalho que virou o artigo *An Approach to Automating User Story Management for Testing Process Optimization in Large Distributed Teams*

@@ -16,14 +16,6 @@ Designed and built a **lakehouse data platform from scratch** (Apr 2025 – pres
 - **Security:** Keycloak SSO (OIDC) across every tool, per-group table access in Trino enforced by Open Policy Agent, HashiCorp Vault for secrets, Nginx/APISIX as the gateway
 - **Alerting:** my most recent work is an alerting system for the platform
 
-**Challenges I solved**
-- **Isolated, all-or-nothing loads:** a failed run never leaves `main` half-written, because each run gets its own Nessie branch
-- **Incremental Silver layer:** MERGE upserts with soft-delete tracking (`is_deleted`) instead of full reloads
-- **One identity, four roles:** the admin/engineer/analyst/viewer roles carry consistently across Trino, object storage, Superset, and Airflow. Group changes in Keycloak reach the query engine through a webhook, so nothing needs a restart
-- **Secrets management:** moved credentials from env files to Vault (AppRole per service), so they can be rotated without redeploying
-- **Operations:** encrypted (AES-256) backups to object storage and Google Drive with retention, a restore pipeline, and a monthly access-audit report (login events and query history) sent by email
-- **Portability:** the same codebase deploys to 6 topologies (dev, staging, on-prem, hybrid AWS…) with Docker Compose
-
 #### Test Automation (SDET)
 - Built agent-based tools to create, analyze and execute test cases
 - Automated task creation from user stories, work that became the paper *An Approach to Automating User Story Management for Testing Process Optimization in Large Distributed Teams*
