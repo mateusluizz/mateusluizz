@@ -2,9 +2,9 @@
 
 ### Oi, sou o Mateus
 
-**Engenheiro de Dados e Plataforma e SDET.** Construí do zero uma plataforma de dados lakehouse (70+ releases) e ferramentas com agentes de IA para automação de testes. Tenho pesquisa publicada em automação de testes.
+Sou engenheiro de dados e plataforma e SDET no INDT, em Manaus. Projetei e construí do zero uma plataforma de dados lakehouse, da ingestão aos dashboards, e já entreguei mais de 70 releases dela desde abril de 2025. Na área de testes, crio ferramentas que usam agentes de IA para criar, analisar e executar casos de teste, e mantenho a infraestrutura que roda essas ferramentas.
 
-Especialista em Inteligência Artificial para a Engenharia de Testes de Software (IARTES · UFAM, 2026) · Engenheiro de Computação · Manaus, AM · INDT
+Sou Engenheiro de Computação, com especialização em IA para a Engenharia de Testes de Software (UFAM). Minha pesquisa em automação de testes virou artigo publicado e foi apresentada no CBSoft 2026.
 
 #### Engenharia de Dados
 Projetei e construí uma **plataforma de dados lakehouse do zero** (abr/2025 – atual, 70+ releases), self-hosted on-prem e com deploy híbrido na AWS:

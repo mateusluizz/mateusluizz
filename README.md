@@ -2,9 +2,9 @@ English · [Português](README.pt-BR.md)
 
 ### Hi, I'm Mateus
 
-**Data & Platform Engineer and SDET.** Built a lakehouse data platform from scratch (70+ releases) and AI-agent tooling for test automation. Published research on test automation.
+I'm a data and platform engineer and SDET at INDT, in Manaus, Brazil. I designed and built a lakehouse data platform from scratch, from ingestion to dashboards, and have shipped more than 70 releases of it since April 2025. On the testing side, I build tools that use AI agents to create, analyze and run test cases, and I keep the infrastructure behind them running.
 
-Postgraduate specialization in Artificial Intelligence for Software Testing Engineering (IARTES · UFAM, 2026) · Computer Engineer · Manaus, Brazil · INDT
+I'm a Computer Engineer with a postgraduate specialization in AI for Software Testing Engineering (UFAM). My research on test automation has been published as a paper and presented at CBSoft 2026.
 
 #### Data Engineering
 Designed and built a **lakehouse data platform from scratch** (Apr 2025 – present, 70+ releases), self-hosted on-prem with a hybrid AWS deployment:
