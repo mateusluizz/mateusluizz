@@ -1,0 +1,30 @@
+🇺🇸 English · [🇧🇷 Português](README.pt-BR.md)
+
+### Hi, I'm Mateus 👋
+
+Computer Engineer with a postgraduate specialization in **Artificial Intelligence for Software Testing Engineering** (IARTES · UFAM, 2026). Based in Manaus, Brazil · INDT.
+
+I work on **data engineering** and **backend**.
+
+#### 🗄️ Data Engineering
+Designed and built a **lakehouse data platform from scratch** (Apr 2025 – present, 70+ releases), self-hosted on-prem with a hybrid AWS deployment:
+
+- **Ingestion:** Apache Airflow 3 (Celery) running PySpark jobs that pull business data from a REST API (companies, business units, cost/profit centers, employees, suppliers), plus file uploads (XLSX/CSV/JSON/Parquet)
+- **Storage:** Apache Iceberg tables on S3-compatible object storage (MinIO / AWS S3), organized as **Bronze → Silver → Gold** layers (raw → cleaned, deduplicated and incrementally merged → business aggregates)
+- **Catalog:** Project Nessie for Git-like versioning. Every pipeline run writes to its own branch and merges into `main` only when it succeeds
+- **Consumption:** Trino for federated SQL and Apache Superset for dashboards
+- **Security:** Keycloak SSO (OIDC) across every tool, per-group table access in Trino enforced by Open Policy Agent, HashiCorp Vault for secrets, Nginx/APISIX as the gateway
+
+**Challenges I solved**
+- **Isolated, all-or-nothing loads:** a failed run never leaves `main` half-written, because each run gets its own Nessie branch
+- **Incremental Silver layer:** MERGE upserts with soft-delete tracking (`is_deleted`) instead of full reloads
+- **One identity, four roles:** the admin / engineer / analyst / viewer roles carry consistently across Trino, object storage, Superset and Airflow. Group changes in Keycloak reach the query engine through a webhook, so nothing needs a restart
+- **Secrets management:** moved credentials from env files to Vault (AppRole per service), so they can be rotated without redeploying
+- **Operations:** encrypted (AES-256) backups to object storage and Google Drive with retention, a restore pipeline, and a monthly access-audit report (login events and query history) sent by e-mail
+- **Portability:** the same codebase deploys to 6 topologies (dev, staging, on-prem, hybrid AWS…) with Docker Compose
+
+#### 🛠️ Stack
+**Languages:** Python · Java · JavaScript/TypeScript · SQL
+**Backend:** Django · Django REST · FastAPI · Flask · Spring Boot
+**Data:** Apache Spark · Airflow · Iceberg · Nessie · Trino · Superset · MinIO/S3 · PostgreSQL
+**Infra & Security:** Docker · Nginx · APISIX · Keycloak · HashiCorp Vault · OPA · Linux
