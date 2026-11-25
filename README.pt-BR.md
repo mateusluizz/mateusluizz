@@ -2,11 +2,11 @@
 
 ### Oi, sou o Mateus
 
-Sou SDET no INDT, em Manaus. Meu forte é desenvolvimento backend em Python com Django e FastAPI, agentes de IA com LangGraph e Android. No INDT, crio ferramentas que usam agentes de IA para criar, analisar e executar casos de teste, e mantenho a infraestrutura que roda essas ferramentas. Uma delas, que automatiza a gestão de user stories, virou artigo publicado.
+Sou SDET no INDT, em Manaus. No INDT, crio ferramentas que usam agentes de IA para criar, analisar e executar casos de teste, e mantenho a infraestrutura que roda essas ferramentas. Uma delas, que automatiza a gestão de user stories, virou artigo publicado.
 
 Sou Engenheiro de Computação e, em 2026, concluí a especialização em IA para a Engenharia de Testes de Software na UFAM. Minha pesquisa da pós, sobre geração de casos de teste para aplicativos móveis com aprendizado por reforço e agentes de IA, foi apresentada no CBSoft 2026.
 
-Em paralelo ao INDT, projetei e construí do zero uma plataforma de dados lakehouse para um projeto à parte, da ingestão aos dashboards, e já entreguei mais de 70 releases dela desde abril de 2025.
+Em paralelo ao INDT, projetei e construí do zero uma plataforma de dados lakehouse para um projeto à parte, da ingestão aos dashboards.
 
 #### Automação de Testes (SDET)
 - Criei ferramentas com agentes de IA para criação, análise e execução de casos de teste
@@ -25,7 +25,7 @@ Também cuido da infraestrutura de uma plataforma de ferramentas para desenvolve
 - *Otimização da Geração de Casos de Teste em Aplicativos Móveis via Aprendizado por Reforço e Agentes de IA*. Trabalho da pós, apresentado no [SAST · CBSoft 2026](https://cbsoft.sbc.org.br/2026/en/symposiums/sast/event/)
 
 #### Engenharia de Dados
-Projetei e construí uma **plataforma de dados lakehouse do zero** (abr/2025 – atual, 70+ releases), self-hosted on-prem e com deploy híbrido na AWS:
+Projetei e construí uma **plataforma de dados lakehouse do zero** (abr/2025 – atual), self-hosted on-prem e com deploy híbrido na AWS:
 
 - **Ingestão:** Apache Airflow 3 (Celery) orquestrando jobs PySpark que extraem dados de negócio de uma API REST (empresas, unidades de negócio, centros de custo/lucro, colaboradores, fornecedores), além de upload de arquivos (XLSX/CSV/JSON/Parquet)
 - **Armazenamento:** tabelas Apache Iceberg em object storage compatível com S3 (MinIO / AWS S3), organizadas em camadas **Bronze → Silver → Gold** (bruto → limpo, deduplicado e mesclado incrementalmente → agregados de negócio)

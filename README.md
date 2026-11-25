@@ -2,11 +2,11 @@ English · [Português](README.pt-BR.md)
 
 ### Hi, I'm Mateus
 
-I'm an SDET at INDT, in Manaus, Brazil. My strongest skills are Python backend development with Django and FastAPI, AI agents with LangGraph, and Android. At INDT I build tools that use AI agents to create, analyze and run test cases, and I keep the infrastructure behind them running. One of those tools, which automates user story management, became a published paper.
+I'm an SDET at INDT, in Manaus, Brazil. At INDT I build tools that use AI agents to create, analyze and run test cases, and I keep the infrastructure behind them running. One of those tools, which automates user story management, became a published paper.
 
 I'm a Computer Engineer, and in 2026 I completed a postgraduate specialization in AI for Software Testing Engineering at UFAM. My research there, on test case generation for mobile apps with reinforcement learning and AI agents, was presented at CBSoft 2026.
 
-Alongside my work at INDT, I designed and built a lakehouse data platform from scratch for a separate project, from ingestion to dashboards, and have shipped more than 70 releases of it since April 2025.
+Alongside my work at INDT, I designed and built a lakehouse data platform from scratch for a separate project, from ingestion to dashboards.
 
 #### Test Automation (SDET)
 - Built agent-based tools to create, analyze and execute test cases
@@ -25,7 +25,7 @@ I also run the infrastructure of a platform of tools for manual and automated te
 - *Otimização da Geração de Casos de Teste em Aplicativos Móveis via Aprendizado por Reforço e Agentes de IA* (Optimizing Test Case Generation for Mobile Apps with Reinforcement Learning and AI Agents). Postgraduate research, presented at [SAST · CBSoft 2026](https://cbsoft.sbc.org.br/2026/en/symposiums/sast/event/)
 
 #### Data Engineering
-Designed and built a **lakehouse data platform from scratch** (Apr 2025 – present, 70+ releases), self-hosted on-prem with a hybrid AWS deployment:
+Designed and built a **lakehouse data platform from scratch** (Apr 2025 – present), self-hosted on-prem with a hybrid AWS deployment:
 
 - **Ingestion:** Apache Airflow 3 (Celery) running PySpark jobs that pull business data from a REST API (companies, business units, cost/profit centers, employees, suppliers), plus file uploads (XLSX/CSV/JSON/Parquet)
 - **Storage:** Apache Iceberg tables on S3-compatible object storage (MinIO / AWS S3), organized as **Bronze → Silver → Gold** layers (raw → cleaned, deduplicated and incrementally merged → business aggregates)
