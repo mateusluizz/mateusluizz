@@ -34,6 +34,8 @@ Designed and built a **lakehouse data platform from scratch** (Apr 2025 – pres
 - **Security:** Keycloak SSO (OIDC) across every tool, per-group table access in Trino enforced by Open Policy Agent, HashiCorp Vault for secrets, Nginx/APISIX as the gateway
 - **Alerting:** my most recent work is an alerting system for the platform
 
+---
+
 #### Stack
 **Backend:** Python · Django · Django REST · FastAPI · Celery · RabbitMQ · Java · Spring Boot
 

@@ -34,6 +34,8 @@ Projetei e construí uma **plataforma de dados lakehouse do zero** (abr/2025 –
 - **Segurança:** SSO com Keycloak (OIDC) em todas as ferramentas, acesso a tabelas por grupo no Trino via Open Policy Agent, HashiCorp Vault para segredos, Nginx/APISIX como gateway
 - **Alertas:** meu trabalho mais recente é um sistema de alertas para a plataforma
 
+---
+
 #### Stack
 **Backend:** Python · Django · Django REST · FastAPI · Celery · RabbitMQ · Java · Spring Boot
 
