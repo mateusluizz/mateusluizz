@@ -2,9 +2,9 @@ English · [Português](README.pt-BR.md)
 
 ### Hi, I'm Mateus
 
-Computer Engineer with a postgraduate specialization in **Artificial Intelligence for Software Testing Engineering** (IARTES · UFAM, 2026). Based in Manaus, Brazil · INDT.
+**Data & Platform Engineer and SDET.** Built a lakehouse data platform from scratch (70+ releases) and AI-agent tooling for test automation. Published research on test automation.
 
-I work on **data engineering**, **test automation** and **backend**.
+Postgraduate specialization in Artificial Intelligence for Software Testing Engineering (IARTES · UFAM, 2026) · Computer Engineer · Manaus, Brazil · INDT
 
 #### Data Engineering
 Designed and built a **lakehouse data platform from scratch** (Apr 2025 – present, 70+ releases), self-hosted on-prem with a hybrid AWS deployment:

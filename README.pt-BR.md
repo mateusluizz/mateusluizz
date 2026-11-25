@@ -2,9 +2,9 @@
 
 ### Oi, sou o Mateus
 
-Engenheiro de Computação, especialista em **Inteligência Artificial para a Engenharia de Testes de Software** (IARTES · UFAM, 2026). Manaus, AM · INDT.
+**Engenheiro de Dados e Plataforma e SDET.** Construí do zero uma plataforma de dados lakehouse (70+ releases) e ferramentas com agentes de IA para automação de testes. Tenho pesquisa publicada em automação de testes.
 
-Trabalho com **engenharia de dados**, **automação de testes** e **backend**.
+Especialista em Inteligência Artificial para a Engenharia de Testes de Software (IARTES · UFAM, 2026) · Engenheiro de Computação · Manaus, AM · INDT
 
 #### Engenharia de Dados
 Projetei e construí uma **plataforma de dados lakehouse do zero** (abr/2025 – atual, 70+ releases), self-hosted on-prem e com deploy híbrido na AWS:
